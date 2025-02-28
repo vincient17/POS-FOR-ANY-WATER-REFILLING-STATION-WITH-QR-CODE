@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+main{
+    display: flex;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.dp-flex{
+    display: flex; 
+}
+.align-center{
+    align-items: center;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.space-around{
+    justify-content: space-around;
+}
+.no-margin{
+    margin: 0px;
+}
+.sidebar{
+    width: 110px;
+/*    width: 240px;*/
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: gray !important;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    background: #002f87;
+    position: sticky;
+    top: 0;
+}
+.sidebar:hover{
+    width: 265px;
+}
+.head-section{
+    position: relative;
+    background-image: linear-gradient(180deg, #ff00de, #e100d4);
+    padding: 1.5rem 0;
+    color: white;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+.menu li:hover{
+    background: blue;
+    transform: translateX(10px);
+}
+.active{
+    background: blue;
+}
+.menu a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/*   main body   */
+.main-content{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #e1f5fe;
+    padding: 0.5rem 1rem;
+}
+.header-wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.search-bar label{
+    display: block;
+    margin: 0!important;
+    width: fit-content;
+}
+#searchInput {
+    padding: 5px 3rem 5px 5px;
+    width: 250px;
+    border: solid 1px black;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+.search-bar button{
+    transform: translateX(-51px);
+    background: black;
+    padding: 5px 13px;
+}
+.search-bar button i{
+    font-size: 20px;
+    color: white;
+}
+.reservation-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    padding: 2rem;
+}
+.input-group {
+    margin: 1.5rem 0;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+select{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+form{
+    position: relative;
+    width: 400px;
+    padding: 2.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(128deg, #2196f3ba, #0027ff54);
+}
+a:hover{
+    text-decoration: none;
+}
+.toggle-password{
+    cursor: pointer;
+    position: absolute;
+    top: 41px;
+    right: 10px;
+    font-size: 17px;
+    animation: pump 1.5s infinite;
+
+}
+
+
+@keyframes pump {
+    0% {
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.top-wrapper{
+    position: relative;
+    z-index: 10;
+}
+.top-content{
+    padding: 0.5rem!important;
+    background: white;
+    color: blue;
+}
+.top-content .btn-logout{
+    color: black;
+    background: transparent;
+}
+.user{
+    margin-left: 2rem!important;
+}
+.logout{
+    margin-right: 2rem!important;
+}
+.system_name{
+    color: black;
+    font-family: Cooper black;
+}
+body{
+    position: relative;
+}
+.banner-img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(../img/water_banner2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.table-wrapper {
+    position: relative;
+    z-index: 2;
+    background-color: transparent; 
+    padding: 20px;
+}
+
+.wrs_logo{
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/water_splash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.section{
+    position: relative;
+    z-index: 10;
+}
+
+
+
